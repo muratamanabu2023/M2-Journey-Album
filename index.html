@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#22313f">
+  <title>M2 Journey Album</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="passport-header">
+    <div class="passport-icon">✈</div>
+    <div>
+      <p class="eyebrow">PASSPORT & TRAVEL RECORD</p>
+      <h1>M2 Journey Album</h1>
+      <p class="subtitle">My Travel Memories</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="trip-selector-wrap">
+      <div class="section-heading">
+        <span class="section-kicker">MY JOURNEYS</span>
+        <h2>旅行を選択</h2>
+      </div>
+      <div id="trip-selector" class="trip-selector"></div>
+    </section>
+
+    <section class="trip-banner">
+      <div class="badge">ACTIVE TRIP</div>
+      <h2 id="trip-title">旅行</h2>
+      <p id="trip-dates" class="dates"></p>
+      <p id="trip-location" class="location"></p>
+    </section>
+
+    <nav class="tab-menu" aria-label="旅行情報">
+      <button class="tab-btn active" data-tab="timeline">タイムライン</button>
+      <button class="tab-btn" data-tab="gallery">フォトギャラリー</button>
+      <button class="tab-btn" data-tab="stamps">スタンプ帳</button>
+    </nav>
+
+    <section id="tab-timeline" class="tab-content active">
+      <div id="timeline-container" class="timeline"></div>
+    </section>
+
+    <section id="tab-gallery" class="tab-content">
+      <div id="gallery-container" class="gallery-grid"></div>
+    </section>
+
+    <section id="tab-stamps" class="tab-content">
+      <div id="stamps-container" class="stamps-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>M2 Journey Album · Version 2</p>
+  </footer>
+
+  <script src="trips.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
